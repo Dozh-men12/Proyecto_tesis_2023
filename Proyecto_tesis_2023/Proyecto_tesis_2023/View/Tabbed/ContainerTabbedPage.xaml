@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_tesis_2023.View.Tabbed.ContainerTabbedPage"
+             xmlns:views="clr-namespace:Proyecto_tesis_2023.View.Tabbed"
+             NavigationPage.HasNavigationBar="False"
+             BarBackgroundColor="Orange"
+            >
+    
+    <TabbedPage.Children>
+
+        <NavigationPage Title="Reservar" IconImageSource="calendar">
+            <x:Arguments>
+                <views:Reservar/>
+            </x:Arguments>
+        </NavigationPage>
+
+        <!--<NavigationPage Title="Búsqueda" IconImageSource="Search">
+            <x:Arguments>
+                <views:Search />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Carrito" IconImageSource="Cart">
+            <x:Arguments>
+                <views:Carrito />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Ajustes" IconImageSource="Settings">
+            <x:Arguments>
+                <views:Settings />
+            </x:Arguments>
+        </NavigationPage>-->
+
+
+    </TabbedPage.Children>
+</TabbedPage>

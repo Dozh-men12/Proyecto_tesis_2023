@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_tesis_2023.View.Tabbed.Mis_reservas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid ColumnDefinitions="*,*"
+          VerticalOptions="Start"
+          BackgroundColor="#2887DE"
+          HeightRequest="30"
+          Padding="8"
+          RowDefinitions="*">
+                <Label 
+                    Margin="5,2,0,0"
+                    Grid.Column="0"
+                    Text="Mis Reservas"
+                    FontSize="Medium"
+                    TextColor="White">
+                </Label>
+                <ImageButton
+            Grid.Column="1"
+            Source="ic_dots"
+            Background="transparent"
+            HorizontalOptions="End">
+                </ImageButton>
+            </Grid>
+            <StackLayout Spacing="0">
+                <StackLayout BackgroundColor="#5CCBEE" Margin="0,-6,0,0">
+                    <Image Source="person.png" WidthRequest="100" HeightRequest="100" Margin="0,10,0,0"/>
+                    <Label Text="Mayuri Quesada Estrada" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" FontSize="22"/>
+                    <Label Text="DiseÃ±o y Desarrollo de Software" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" Margin="0,0,0,10"/>
+                </StackLayout>
+            </StackLayout>
+            <Grid Margin="0,15,0,0">
+                <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Grid>
+            <Label Text="Mis reservas" FontAttributes="Bold"
+                   FontSize="17"
+                   TextColor="Black"
+                   Margin="15,10,0,10"/>
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  Spacing="50">
+                    <Label Text="Campo" TextColor="Black"/>
+                    <Label Text="Fecha" TextColor="Black"/>
+                    <Label Text="Hora" TextColor="Black"/>
+                </StackLayout>
+                <!--<Grid  WidthRequest="250" HeightRequest="35" ColumnDefinitions="*,*,*" RowDefinitions="*"   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ColumnSpacing="10" RowSpacing="2"  BackgroundColor="Aqua" >
+                    <Label Text="CAMPO" TextColor="#757171" HorizontalOptions="Center"  FontAttributes="Bold" Grid.Column="0"/>
+                    <Label Text="FECHA" TextColor="#757171" HorizontalOptions="Center"  FontAttributes="Bold" Grid.Column="1"/>
+                    <Label Text="HORA"  TextColor="#757171" HorizontalOptions="Center"  FontAttributes="Bold" Grid.Column="2"/>
+                    <BoxView Color="Black" HeightRequest="1" WidthRequest="40"  VerticalOptions="Start" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" />
+                    <BoxView Color="Black" HeightRequest="1" WidthRequest="35"  VerticalOptions="Start" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" />
+                    <BoxView Color="Black" HeightRequest="1" WidthRequest="40"  VerticalOptions="Start" HorizontalOptions="Center" Grid.Row="1" Grid.Column="2" />
+                </Grid>-->
+                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="400" WidthRequest="350"  Margin="0,0,0,20 " >
+                    <StackLayout >
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50,0,0,0">
+                            <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
+                            <ImageButton Source="trash.png"        HorizontalOptions="Center"           VerticalOptions="CenterAndExpand" />
+
+                        </StackLayout>
+                        <ImageButton Source="trash.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50,0,0,0">
+                            <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
+                            <ImageButton Source="trash.png"   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50,0,0,0">
+                            <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
+                            <ImageButton Source="trash.png"   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50,0,0,0">
+                            <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
+                            <ImageButton Source="trash.png"   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" />
+                        </StackLayout>
+                        <!--<Button Text="Fultbol 1            05/06           10AM" BackgroundColor="#72CA7A" CornerRadius="30" HorizontalOptions="Center"/>
+                        <Button Text="Fultbol 1            05/06           10AM" BackgroundColor="#72CA7A" CornerRadius="30" HorizontalOptions="Center"/>
+                        <Button Text="Fultbol 1            05/06           10AM" BackgroundColor="#72CA7A" CornerRadius="30" HorizontalOptions="Center"/>-->
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
