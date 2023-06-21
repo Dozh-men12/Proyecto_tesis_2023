@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
              x:Class="Proyecto_tesis_2023.View.Tabbed.Mis_reservas">
     <ContentPage.Content>
         <StackLayout>
@@ -17,10 +18,15 @@
                     FontSize="Medium"
                     TextColor="White">
                 </Label>
+                <!--<Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" >
+                    <Button.ImageSource>
+                        <FileImageSource File="trash_icon.png" />
+                    </Button.ImageSource>
+                </Button>-->                
                 <ImageButton
             Grid.Column="1"
-            Source="ic_dots"
-            Background="transparent"
+            Source="ic_dots.png"
+            Background="#2887DE"
             HorizontalOptions="End">
                 </ImageButton>
             </Grid>
@@ -28,7 +34,7 @@
                 <StackLayout BackgroundColor="#5CCBEE" Margin="0,-6,0,0">
                     <Image Source="person.png" WidthRequest="100" HeightRequest="100" Margin="0,10,0,0"/>
                     <Label Text="Mayuri Quesada Estrada" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" FontSize="22"/>
-                    <Label Text="DiseÃ±o y Desarrollo de Software" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" Margin="0,0,0,10"/>
+                    <Label Text="Diseño y Desarrollo de Software" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" Margin="0,0,0,10"/>
                 </StackLayout>
             </StackLayout>
             <Grid Margin="0,15,0,0">
@@ -38,7 +44,7 @@
                    FontSize="17"
                    TextColor="Black"
                    Margin="15,10,0,10"/>
-            <StackLayout HorizontalOptions="CenterAndExpand">
+            <!--<StackLayout HorizontalOptions="CenterAndExpand">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  Spacing="50">
                     <Label Text="Campo" TextColor="Black"/>
                     <Label Text="Fecha" TextColor="Black"/>
@@ -67,9 +73,21 @@
                             <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
                             <ImageButton Source="trash.png"   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" />
                         </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50,0,0,0">
+                            <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
+                            <ImageButton Source="trash.png"   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50,0,0,0">
+                            <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
+                            <ImageButton Source="trash.png"   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50,0,0,0">
+                            <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
+                            <ImageButton Source="trash.png"   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" />
+                        </StackLayout>
                     </StackLayout>
                 </ScrollView>
-            </StackLayout>
+            </StackLayout>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

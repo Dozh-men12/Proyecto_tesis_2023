@@ -1,28 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Proyecto_tesis_2023.View.Tabbed.Reglamentos"
+             x:Class="Proyecto_tesis_2023.View.Tabbed.Inicio"
              NavigationPage.HasNavigationBar="False">
-    <ContentPage.Content>
-        <Grid ColumnDefinitions="*,*"
+    <ContentPage.Content>        
+        <StackLayout>
+            <Grid ColumnDefinitions="*,*"
                 VerticalOptions="Start"
                 BackgroundColor="#2887DE"
                 HeightRequest="30"
                 Padding="8"
                 RowDefinitions="*">
-            <Label 
+                <Label 
                     Margin="5,2,0,0"
                     Grid.Column="0"
-                    Text="Reglamentos"
+                    Text="Inicio"
                     FontSize="Medium"
                     TextColor="White">
-            </Label>
-            <ImageButton
+                </Label>
+                <ImageButton
             Grid.Column="1"
             Source="ic_dots"
             Background="transparent"
             HorizontalOptions="End">
-            </ImageButton>
-        </Grid>
+                </ImageButton>
+            </Grid>
+            <Label Text="Acá va el contenido del inicio"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

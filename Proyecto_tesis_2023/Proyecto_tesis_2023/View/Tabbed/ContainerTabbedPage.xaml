@@ -8,20 +8,25 @@
             >
     
     <TabbedPage.Children>
+        <NavigationPage Title="Inicio" IconImageSource="icon_home.png">
+            <x:Arguments>
+                <views:Inicio/>
+            </x:Arguments>
+        </NavigationPage>
 
-        <NavigationPage Title="Reservar" IconImageSource="icon_calendar">
+        <NavigationPage Title="Reservar" IconImageSource="search_icon.png">
             <x:Arguments>
                 <views:Reservar/>
             </x:Arguments>
         </NavigationPage>
 
-        <NavigationPage Title="Mis Reservas" IconImageSource="icon_my_reserve">
+        <NavigationPage Title="Perfil" IconImageSource="user2_icon">
             <x:Arguments>
                 <views:Mis_reservas/>
             </x:Arguments>
         </NavigationPage>
 
-        <NavigationPage Title="Reglamentos" IconImageSource="icon_map">
+        <NavigationPage Title="Normas" IconImageSource="reglamentos_icon.png">
             <x:Arguments>
                 <views:Reglamentos/>
             </x:Arguments>

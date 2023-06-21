@@ -18,7 +18,6 @@ namespace Proyecto_tesis_2023.View.Tabbed
         {
             InitializeComponent();
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
-
             On<Android>().SetIsSmoothScrollEnabled(true);
         }
     }
