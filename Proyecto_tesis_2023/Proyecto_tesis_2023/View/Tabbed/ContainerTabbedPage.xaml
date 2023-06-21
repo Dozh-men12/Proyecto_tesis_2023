@@ -9,29 +9,23 @@
     
     <TabbedPage.Children>
 
-        <NavigationPage Title="Reservar" IconImageSource="calendar">
+        <NavigationPage Title="Reservar" IconImageSource="icon_calendar">
             <x:Arguments>
                 <views:Reservar/>
             </x:Arguments>
         </NavigationPage>
 
-        <!--<NavigationPage Title="Búsqueda" IconImageSource="Search">
+        <NavigationPage Title="Mis Reservas" IconImageSource="icon_my_reserve">
             <x:Arguments>
-                <views:Search />
+                <views:Mis_reservas/>
             </x:Arguments>
         </NavigationPage>
 
-        <NavigationPage Title="Carrito" IconImageSource="Cart">
+        <NavigationPage Title="Reglamentos" IconImageSource="icon_map">
             <x:Arguments>
-                <views:Carrito />
+                <views:Reglamentos/>
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage Title="Ajustes" IconImageSource="Settings">
-            <x:Arguments>
-                <views:Settings />
-            </x:Arguments>
-        </NavigationPage>-->
-
 
     </TabbedPage.Children>
 </TabbedPage>

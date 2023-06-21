@@ -12,7 +12,7 @@ namespace Proyecto_tesis_2023
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = new ContainerTabbedPage();
         }
 
         protected override void OnStart()
