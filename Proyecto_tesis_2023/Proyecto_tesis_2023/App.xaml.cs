@@ -1,4 +1,5 @@
-﻿using Proyecto_tesis_2023.View.Tabbed;
+﻿using Proyecto_tesis_2023.View;
+using Proyecto_tesis_2023.View.Tabbed;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace Proyecto_tesis_2023
         {
             InitializeComponent();
 
-            MainPage = new ContainerTabbedPage();
+            MainPage = new Login();
         }
 
         protected override void OnStart()

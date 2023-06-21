@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto_tesis_2023.View.Login">
+    
+    <RelativeLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <Grid VerticalOptions="FillAndExpand" BackgroundColor="#2887DE">
+
+            <Image x:Name="background" Source="tecini.png" 
+               AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" 
+               VerticalOptions="FillAndExpand" Aspect="AspectFill" IsVisible="true" 
+               HeightRequest="850" Opacity="0.3"/>
+
+            <Grid RowSpacing="5" VerticalOptions="Center" >
+                <Image x:Name="main_backgroundd" Source="soccer_login.png" IsVisible="true" Aspect="AspectFill"                    
+                   HeightRequest="260" WidthRequest="20" Margin="10,0,30,120"/>
+            </Grid>
+            <StackLayout Margin="0,350,0,0">
+                <!-- Se aplica un Margin de 400 unidades en la parte superior -->
+                <Button Text="Iniciar Sesión con Google" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" CornerRadius="20" >
+                    <Button.ImageSource >
+                        <FileImageSource File="icongoogle.png"/>
+                    </Button.ImageSource>
+                </Button>
+            </StackLayout>
+        </Grid>
+    </RelativeLayout>
+</ContentPage>
