@@ -44,14 +44,6 @@
                     <Label Text="Fecha" TextColor="Black"/>
                     <Label Text="Hora" TextColor="Black"/>
                 </StackLayout>
-                <!--<Grid  WidthRequest="250" HeightRequest="35" ColumnDefinitions="*,*,*" RowDefinitions="*"   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ColumnSpacing="10" RowSpacing="2"  BackgroundColor="Aqua" >
-                    <Label Text="CAMPO" TextColor="#757171" HorizontalOptions="Center"  FontAttributes="Bold" Grid.Column="0"/>
-                    <Label Text="FECHA" TextColor="#757171" HorizontalOptions="Center"  FontAttributes="Bold" Grid.Column="1"/>
-                    <Label Text="HORA"  TextColor="#757171" HorizontalOptions="Center"  FontAttributes="Bold" Grid.Column="2"/>
-                    <BoxView Color="Black" HeightRequest="1" WidthRequest="40"  VerticalOptions="Start" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" />
-                    <BoxView Color="Black" HeightRequest="1" WidthRequest="35"  VerticalOptions="Start" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" />
-                    <BoxView Color="Black" HeightRequest="1" WidthRequest="40"  VerticalOptions="Start" HorizontalOptions="Center" Grid.Row="1" Grid.Column="2" />
-                </Grid>-->
                 <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="400" WidthRequest="350"  Margin="0,0,0,20 " >
                     <StackLayout >
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50,0,0,0">
@@ -75,9 +67,6 @@
                             <Button Text="Fultbol 1            05/06           10AM" CornerRadius="30" HorizontalOptions="Center" Margin="0,8,0,0" />
                             <ImageButton Source="trash.png"   VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" />
                         </StackLayout>
-                        <!--<Button Text="Fultbol 1            05/06           10AM" BackgroundColor="#72CA7A" CornerRadius="30" HorizontalOptions="Center"/>
-                        <Button Text="Fultbol 1            05/06           10AM" BackgroundColor="#72CA7A" CornerRadius="30" HorizontalOptions="Center"/>
-                        <Button Text="Fultbol 1            05/06           10AM" BackgroundColor="#72CA7A" CornerRadius="30" HorizontalOptions="Center"/>-->
                     </StackLayout>
                 </ScrollView>
             </StackLayout>

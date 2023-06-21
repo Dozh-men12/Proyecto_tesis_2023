@@ -4,7 +4,7 @@
              x:Class="Proyecto_tesis_2023.View.Tabbed.ContainerTabbedPage"
              xmlns:views="clr-namespace:Proyecto_tesis_2023.View.Tabbed"
              NavigationPage.HasNavigationBar="False"
-             BarBackgroundColor="Orange"
+             BarBackgroundColor="Transparent"
             >
     
     <TabbedPage.Children>

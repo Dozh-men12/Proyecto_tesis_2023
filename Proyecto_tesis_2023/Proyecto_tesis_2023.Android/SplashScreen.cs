@@ -13,7 +13,7 @@ using System.Text;
 namespace Proyecto_tesis_2023.Droid
 {
 
-    [Activity(Label = "Proyecto_tesis_2023", Icon = "@mipmap/icon",
+    [Activity(Label = "Proyecto_Tesis", Icon = "@mipmap/ico",
         Theme = "@style/splash", MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize)]
     public class SplashScreen : Activity
