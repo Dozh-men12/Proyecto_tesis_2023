@@ -14922,16 +14922,19 @@ namespace Proyecto_tesis_2023.Droid
 			public const int switch_thumb_normal_material_light = 2131034323;
 			
 			// aapt resource value: 0x7F0500D4
-			public const int test_mtrl_calendar_day = 2131034324;
+			public const int tecsup = 2131034324;
 			
 			// aapt resource value: 0x7F0500D5
-			public const int test_mtrl_calendar_day_selected = 2131034325;
+			public const int test_mtrl_calendar_day = 2131034325;
 			
 			// aapt resource value: 0x7F0500D6
-			public const int tooltip_background_dark = 2131034326;
+			public const int test_mtrl_calendar_day_selected = 2131034326;
 			
 			// aapt resource value: 0x7F0500D7
-			public const int tooltip_background_light = 2131034327;
+			public const int tooltip_background_dark = 2131034327;
+			
+			// aapt resource value: 0x7F0500D8
+			public const int tooltip_background_light = 2131034328;
 			
 			static Color()
 			{
@@ -16679,22 +16682,25 @@ namespace Proyecto_tesis_2023.Droid
 			public const int soccer_login = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int tecicono = 2131165333;
+			public const int splash = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int tecini = 2131165334;
+			public const int tecicono = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int test_custom_background = 2131165335;
+			public const int tecini = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int tooltip_frame_dark = 2131165336;
+			public const int test_custom_background = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int tooltip_frame_light = 2131165337;
+			public const int tooltip_frame_dark = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int trash = 2131165338;
+			public const int tooltip_frame_light = 2131165338;
+			
+			// aapt resource value: 0x7F07009B
+			public const int trash = 2131165339;
 			
 			static Drawable()
 			{
@@ -20210,6 +20216,9 @@ namespace Proyecto_tesis_2023.Droid
 			
 			// aapt resource value: 0x7F0F0138
 			public const int ShapeAppearance_MaterialComponents_Tooltip = 2131689784;
+			
+			// aapt resource value: 0x7F0F02FB
+			public const int splash = 2131690235;
 			
 			// aapt resource value: 0x7F0F014D
 			public const int TestStyleWithLineHeight = 2131689805;
