@@ -29,7 +29,7 @@
                 <StackLayout BackgroundColor="#5CCBEE" Margin="0,-6,0,0">
                     <Image Source="person.png" WidthRequest="100" HeightRequest="100" Margin="0,10,0,0"/>
                     <Label Text="Mayuri Quesada Estrada" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" FontSize="22"/>
-                    <Label Text="DiseÃ±o y Desarrollo de Software" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" Margin="0,0,0,10"/>
+                    <Label Text="Diseño y Desarrollo de Software" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" Margin="0,0,0,10"/>
                 </StackLayout>
             </StackLayout>
             <Grid Margin="0,15,0,0">
@@ -40,7 +40,7 @@
                    TextColor="Black"
                    Margin="15,10,0,10"/>
             <StackLayout HorizontalOptions="CenterAndExpand">
-                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="400" WidthRequest="350"  Margin="0,0,0,20 " >
+                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="420" WidthRequest="350"  Margin="0,0,0,20 " >
                     <StackLayout Spacing="18">
                         <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
                             <StackLayout BackgroundColor="#DADADA">
