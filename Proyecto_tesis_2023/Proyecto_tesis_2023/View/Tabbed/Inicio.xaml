@@ -25,9 +25,9 @@
             HorizontalOptions="End">
                 </ImageButton>
             </Grid>
-            <Label Text="Acá va el contenido del inicio"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Green" Margin="0,-6,0,0">
+                <Image Source="pato.gif" IsAnimationPlaying="True" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
