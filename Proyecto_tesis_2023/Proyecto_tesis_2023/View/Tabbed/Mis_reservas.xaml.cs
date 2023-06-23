@@ -16,5 +16,22 @@ namespace Proyecto_tesis_2023.View.Tabbed
         {
             InitializeComponent();
         }
+
+        private async void Button_alert(object sender, EventArgs e)
+        {
+            bool result = await DisplayAlert("¡Atención!", "¿Esta seguro que desea eliminar esta reserva?", "Confirmar", "Cancelar");
+
+            //if (result)
+            //{
+            //    // Acción al confirmar
+            //    // ...
+            //}
+            //else
+            //{
+            //    // Acción al cancelar
+            //    // ...
+            //}
+        }
+
     }
 }
