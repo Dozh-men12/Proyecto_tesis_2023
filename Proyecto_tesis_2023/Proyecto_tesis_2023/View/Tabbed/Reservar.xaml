@@ -62,7 +62,7 @@
                                 <Label Text="FUTBOL"  Margin="45,-27,0,0"/>
                                 <Image Source="campofut1" Margin="-260,10,0,0" WidthRequest="20"/>
                                 <Label Text="CAMPO FUTBOL 1"  Margin="45,-27,0,0"/>
-                                <Button Text="Reservar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10"/>
+                                <Button Text="Reservar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
                             </StackLayout>
                         </Frame>
                         <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
@@ -73,7 +73,7 @@
                                 <Label Text="FUTBOL"  Margin="45,-27,0,0"/>
                                 <Image Source="campofut1" Margin="-260,10,0,0" WidthRequest="20"/>
                                 <Label Text="CAMPO FUTBOL 1"  Margin="45,-27,0,0"/>
-                                <Button Text="Eliminar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10"/>
+                                <Button Text="Reservar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
                             </StackLayout>
                         </Frame>
                         <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
@@ -84,7 +84,7 @@
                                 <Label Text="FUTBOL"  Margin="45,-27,0,0"/>
                                 <Image Source="campofut1" Margin="-260,10,0,0" WidthRequest="20"/>
                                 <Label Text="CAMPO FUTBOL 1"  Margin="45,-27,0,0"/>
-                                <Button Text="Eliminar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10"/>
+                                <Button Text="Reservar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
                             </StackLayout>
                         </Frame>
                         <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
@@ -95,7 +95,7 @@
                                 <Label Text="FUTBOL"  Margin="45,-27,0,0"/>
                                 <Image Source="campofut1" Margin="-260,10,0,0" WidthRequest="20"/>
                                 <Label Text="CAMPO FUTBOL 1"  Margin="45,-27,0,0"/>
-                                <Button Text="Eliminar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10"/>
+                                <Button Text="Reservar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
                             </StackLayout>
                         </Frame>
                         <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
@@ -106,7 +106,18 @@
                                 <Label Text="FUTBOL"  Margin="45,-27,0,0"/>
                                 <Image Source="campofut1" Margin="-260,10,0,0" WidthRequest="20"/>
                                 <Label Text="CAMPO FUTBOL 1"  Margin="45,-27,0,0"/>
-                                <Button Text="Eliminar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10"/>
+                                <Button Text="Reservar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
+                            <StackLayout BackgroundColor="#DADADA">
+                                <Image Source="hour" Aspect="AspectFit" Margin="-260,10,0,0" WidthRequest="20" />
+                                <Label Text="13 PM - 14 PM" Margin="45,-27,0,0"/>
+                                <Image Source="soccer" Margin="-260,10,0,0" WidthRequest="20"/>
+                                <Label Text="FUTBOL"  Margin="45,-27,0,0"/>
+                                <Image Source="campofut1" Margin="-260,10,0,0" WidthRequest="20"/>
+                                <Label Text="CAMPO FUTBOL 1"  Margin="45,-27,0,0"/>
+                                <Button Text="Reservar" Margin="200,-45,0,0" BackgroundColor="#9DFF6C" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
                             </StackLayout>
                         </Frame>
                     </StackLayout>
