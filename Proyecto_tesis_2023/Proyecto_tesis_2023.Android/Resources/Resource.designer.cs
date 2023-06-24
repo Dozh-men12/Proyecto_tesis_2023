@@ -19062,25 +19062,25 @@ namespace Proyecto_tesis_2023.Droid
 			public const int btn_radio_on_to_off_mtrl_animation = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int campofut = 2131165279;
+			public const int campofut1 = 2131165279;
 			
 			// aapt resource value: 0x7F070060
-			public const int campofut1 = 2131165280;
+			public const int design_fab_background = 2131165280;
 			
 			// aapt resource value: 0x7F070061
-			public const int design_fab_background = 2131165281;
+			public const int design_ic_visibility = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int design_ic_visibility = 2131165282;
+			public const int design_ic_visibility_off = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int design_ic_visibility_off = 2131165283;
+			public const int design_password_eye = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int design_password_eye = 2131165284;
+			public const int design_snackbar_background = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int design_snackbar_background = 2131165285;
+			public const int futbol_inicio = 2131165285;
 			
 			// aapt resource value: 0x7F070066
 			public const int hour = 2131165286;
@@ -19230,64 +19230,61 @@ namespace Proyecto_tesis_2023.Droid
 			public const int notify_panel_notification_icon_bg = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int pato = 2131165335;
+			public const int person = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int person = 2131165336;
+			public const int pinpong_inicio = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int peruba2_inicio = 2131165337;
+			public const int preference_list_divider_material = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int peruba3_inicio = 2131165338;
+			public const int reglamentos_icon = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int peruba4_inicio = 2131165339;
+			public const int roundedbg = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int preference_list_divider_material = 2131165340;
+			public const int roundedbgdark = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int reglamentos_icon = 2131165341;
+			public const int search_icon = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int roundedbg = 2131165342;
+			public const int soccer = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int roundedbgdark = 2131165343;
+			public const int soccer_login = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int search_icon = 2131165344;
+			public const int splash = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int soccer = 2131165345;
+			public const int squash_inicio = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int soccer_login = 2131165346;
+			public const int tecicono = 2131165346;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int splash = 2131165347;
+			public const int tecini = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int tecicono = 2131165348;
+			public const int test_custom_background = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int tecini = 2131165349;
+			public const int tooltip_frame_dark = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int test_custom_background = 2131165350;
+			public const int tooltip_frame_light = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int tooltip_frame_dark = 2131165351;
+			public const int trash = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int tooltip_frame_light = 2131165352;
+			public const int user2_icon = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int trash = 2131165353;
-			
-			// aapt resource value: 0x7F0700AA
-			public const int user2_icon = 2131165354;
+			public const int voley_inicio = 2131165353;
 			
 			static Drawable()
 			{

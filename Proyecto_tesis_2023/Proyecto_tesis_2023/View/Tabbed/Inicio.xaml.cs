@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-
+using FFImageLoading.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,8 +11,10 @@ namespace Proyecto_tesis_2023.View.Tabbed
     {
         private List<string> gifUrls = new List<string>
         {
-            "peruba3_inicio.gif",
-            "peruba4_inicio.gif"
+            "futbol_inicio.gif",
+            "voley_inicio.gif",
+            "squash_inicio.gif",
+            "pinpong_inicio.gif"
         };
         private int currentIndex = 0;
 
