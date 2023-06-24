@@ -30,7 +30,7 @@
                    FontSize="17"
                    TextColor="Black"
                    Margin="10,10,0,10"/>
-                <Picker Title="Eligir un campo a reservar" Margin="20,-10,20,0">
+                <Picker  Title="Eligir un campo a reservar" Margin="20,-10,20,0">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Futbol campo1</x:String>
@@ -42,12 +42,13 @@
                     </Picker.ItemsSource>
                 </Picker>
             </StackLayout>
-            <StackLayout VerticalOptions="Center">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Start">
                 <Label FontAttributes="Bold" Text="Seleccione la fecha"
                    FontSize="17"
                    Margin="10,10,0,10"
                    TextColor="Black" />
-                <Label Text="Aquí va el horario" FontSize="20" Margin="120,50,100,50" />
+                <DatePicker  x:Name="Calendario" MinimumDate="07/01/2023"  TextColor="#2887DE" Margin="20,-10,20,15"   FontSize="19" MaximumDate="12/15/2023" Date="06/24/2023" />
+                <!--<Label Text="Aquí va el horario" FontSize="20" Margin="120,50,100,50" />-->
             </StackLayout>
 
 
