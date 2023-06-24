@@ -50,8 +50,6 @@
                 <DatePicker  x:Name="Calendario" MinimumDate="07/01/2023"  TextColor="#2887DE" Margin="20,-10,20,15"   FontSize="19" MaximumDate="12/15/2023" Date="06/24/2023" />
                 <!--<Label Text="Aquí va el horario" FontSize="20" Margin="120,50,100,50" />-->
             </StackLayout>
-
-
             <StackLayout HorizontalOptions="CenterAndExpand">
                 <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="450" WidthRequest="350"  Margin="0,0,0,20 " >
                     <StackLayout Spacing="18">
