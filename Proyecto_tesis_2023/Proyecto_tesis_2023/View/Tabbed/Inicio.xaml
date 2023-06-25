@@ -19,7 +19,8 @@
                     FontSize="Medium"
                     TextColor="White">
                 </Label>
-                <ImageButton
+                <ImageButton x:Name="btn_dots" Clicked="btn_dots_Clicked"
+                             BackgroundColor="#2887DE"
             Grid.Column="1"
             Source="ic_dots"
             Background="transparent"
