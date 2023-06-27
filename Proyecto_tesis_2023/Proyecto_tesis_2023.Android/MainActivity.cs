@@ -4,6 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Xamd.ImageCarousel.Forms.Plugin.Droid;
 
 namespace Proyecto_tesis_2023.Droid
 {
@@ -18,6 +19,7 @@ namespace Proyecto_tesis_2023.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             UserDialogs.Init(this);
             LoadApplication(new App());
+            ImageCarouselRenderer.Init();
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

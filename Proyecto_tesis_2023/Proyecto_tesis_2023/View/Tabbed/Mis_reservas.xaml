@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              NavigationPage.HasNavigationBar="False"
              x:Class="Proyecto_tesis_2023.View.Tabbed.Mis_reservas">
-    <ContentPage.Content>
+    <ScrollView>
         <StackLayout>
             <Grid ColumnDefinitions="*,*"
           VerticalOptions="Start"
@@ -90,5 +90,5 @@
                 </ScrollView>
             </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

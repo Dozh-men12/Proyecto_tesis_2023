@@ -1,28 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Xamd.ImageCarousel.Forms.Plugin.Abstractions;assembly=Xamd.ImageCarousel.Forms.Plugin.Abstractions"
              x:Class="Proyecto_tesis_2023.View.Tabbed.Reglamentos"
              NavigationPage.HasNavigationBar="False">
-    <ContentPage.Content>
-        <Grid ColumnDefinitions="*,*"
+    <ScrollView>
+        <StackLayout>
+            <Grid ColumnDefinitions="*,*"
                 VerticalOptions="Start"
                 BackgroundColor="#2887DE"
                 HeightRequest="30"
                 Padding="8"
                 RowDefinitions="*">
-            <Label 
+                <Label 
                     Margin="5,2,0,0"
                     Grid.Column="0"
                     Text="Normas"
                     FontSize="Medium"
                     TextColor="White">
-            </Label>
-            <ImageButton
+                </Label>
+                <ImageButton
             Grid.Column="1"
             Source="ic_dots"
             Background="transparent"
             HorizontalOptions="End">
-            </ImageButton>
-        </Grid>
-    </ContentPage.Content>
+                </ImageButton>
+            </Grid>
+            <StackLayout>
+                <Label Text="Normas que se deben de seguir para el uso del campo polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="20" FontAttributes="Bold" Margin="10,10,10,0"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout BackgroundColor="#E7E3E7">
+                    <Label Text="1.- Los alumnos debe ir con ropa deportiva (retiro de cancha deportiva o  sancionado con una semana sin reservas)" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
+                    <Label Text="-------------------------------------------------------------------------" />
+                    <Label Text="2.- Los alumnos no pueden usar zapatillas con punta de acero (retiro de cancha deportiva o  sancionado con una semana sin reservas)" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
+                    <Label Text="-------------------------------------------------------------------------" />
+                    <Label Text="3.- Los alumnos no pueden quitarse prendas de vestir dentro del campo polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
+                    <Label Text="-------------------------------------------------------------------------" />
+                    <Label Text="4.- Los alumnos no pueden hacer riñas o peleas dentro del polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
+                    <Label Text="-------------------------------------------------------------------------" />
+                    <Label Text="5.- Para usar implementaria dentro del polideportivo como pelotas, raquetas, etc. se deben de entregar DNI para retirar dicha implementaria" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
