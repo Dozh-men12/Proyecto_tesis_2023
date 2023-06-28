@@ -12,10 +12,11 @@ namespace Proyecto_tesis_2023.View.Tabbed
     {
         private List<string> gifUrls = new List<string>
         {
-            "futbol_inicio.gif",
+            "futbol2_inicio.gif",
             "voley_inicio.gif",
-            "squash_inicio.gif",
-            "pinpong_inicio.gif"
+            "fronton_inicio.gif",
+            "pinpong_inicio.gif",
+            "futbol1_inicio.gif"
         };
         private int currentIndex = 0;
 
@@ -29,7 +30,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
         {
             while (true)
             {
-                await Task.Delay(3000); // Espera 3 segundos
+                await Task.Delay(4000); // Espera 4 segundos
 
                 Device.BeginInvokeOnMainThread(() =>
                 {

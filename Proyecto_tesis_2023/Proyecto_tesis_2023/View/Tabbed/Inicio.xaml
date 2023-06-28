@@ -28,7 +28,7 @@
                 </ImageButton>
             </Grid>
             <StackLayout VerticalOptions="FillAndExpand" Margin="0,-6,0,0">
-                <ffimageloading:CachedImage x:Name="mainImage" Source="futbol_inicio.gif" VerticalOptions="FillAndExpand"  Aspect="AspectFill"/>
+                <ffimageloading:CachedImage x:Name="mainImage" Source="futbol1_inicio.gif" VerticalOptions="FillAndExpand"  Aspect="AspectFill"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
