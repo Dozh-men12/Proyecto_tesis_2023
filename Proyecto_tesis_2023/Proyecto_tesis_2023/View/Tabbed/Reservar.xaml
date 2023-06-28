@@ -42,7 +42,7 @@
                     </Picker.ItemsSource>
                 </Picker>
             </StackLayout>
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Start">
+            <StackLayout VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
                 <Label FontAttributes="Bold" Text="Seleccione la fecha"
                    FontSize="17"
                    Margin="10,10,0,10"
