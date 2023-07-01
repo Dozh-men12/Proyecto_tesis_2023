@@ -27,9 +27,8 @@
             </Grid>
             <StackLayout Spacing="0">
                 <StackLayout BackgroundColor="#5CCBEE" Margin="0,-6,0,0">
-                    <Image Source="person.png" WidthRequest="100" HeightRequest="100" Margin="0,10,0,0"/>
-                    <Label Text="Mayuri Quesada Estrada" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" FontSize="22"/>
-                    <Label Text="Diseño y Desarrollo de Software" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" Margin="0,0,0,10"/>
+                    <Image x:Name="imgProfile" WidthRequest="100" HeightRequest="100" Margin="0,10,0,0" />
+                    <Label x:Name="lblName" HorizontalOptions="Center" VerticalOptions="EndAndExpand" TextColor="Black" FontSize="22"/>
                 </StackLayout>
             </StackLayout>
             <Grid Margin="0,15,0,0">

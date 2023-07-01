@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Proyecto_tesis_2023.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Proyecto_tesis_2023.View.Tabbed;
 
 namespace Proyecto_tesis_2023.View
 {
@@ -15,6 +16,8 @@ namespace Proyecto_tesis_2023.View
         private readonly IGoogleManager _googleManager;
         GoogleUser GoogleUser = new GoogleUser();
         public bool IsLogedIn { get; set; }
+        public string NameValue { get; set; }
+        public ImageSource ImageValue { get; set; }
         public Login()
         {
             _googleManager = DependencyService.Get<IGoogleManager>();
@@ -31,21 +34,22 @@ namespace Proyecto_tesis_2023.View
         {
             _googleManager.Login(OnLoginComplete);
         }
-        private void OnLoginComplete(GoogleUser googleUser, string message)
+        private async void OnLoginComplete(GoogleUser googleUser, string message)
         {
             if (googleUser != null)
             {
                 GoogleUser = googleUser;
-                txtName.Text = GoogleUser.Name;
-                txtEmail.Text = GoogleUser.Email;
-                imgProfile.Source = GoogleUser.Picture;
-                IsLogedIn = true;
+                NameValue = GoogleUser.Name;
+                ImageValue = ImageSource.FromUri(new Uri(GoogleUser.Picture.ToString()));
+                await Navigation.PushAsync(new Mis_reservas(NameValue, ImageValue));
             }
+
             else
             {
                 DisplayAlert("Message", message, "Ok");
             }
         }
+
         private void GoogleLogout()
         {
             _googleManager.Logout();
@@ -59,5 +63,6 @@ namespace Proyecto_tesis_2023.View
             txtEmail.Text = "Email: ";
             imgProfile.Source = "";
         }
+
     }
 }

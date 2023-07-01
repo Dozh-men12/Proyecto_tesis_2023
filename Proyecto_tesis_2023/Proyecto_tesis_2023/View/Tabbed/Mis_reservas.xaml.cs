@@ -33,5 +33,14 @@ namespace Proyecto_tesis_2023.View.Tabbed
             //}
         }
 
+        public Mis_reservas(string NameValue, ImageSource ImageValue)
+        {
+            InitializeComponent();
+
+            lblName.Text = NameValue;
+            imgProfile.Source = ImageValue;
+
+        }
+
     }
 }
