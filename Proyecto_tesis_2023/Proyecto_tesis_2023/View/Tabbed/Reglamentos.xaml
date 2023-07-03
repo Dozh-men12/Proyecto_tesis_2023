@@ -4,8 +4,8 @@
              xmlns:controls="clr-namespace:Xamd.ImageCarousel.Forms.Plugin.Abstractions;assembly=Xamd.ImageCarousel.Forms.Plugin.Abstractions"
              x:Class="Proyecto_tesis_2023.View.Tabbed.Reglamentos"
              NavigationPage.HasNavigationBar="False">
-    <StackLayout>
-        <StackLayout BackgroundColor="Blue">
+    <StackLayout BackgroundColor="Beige" Spacing="0">
+        <StackLayout  >
             <Grid ColumnDefinitions="*,*"
                 VerticalOptions="Start"
                 BackgroundColor="#2887DE"
@@ -26,49 +26,143 @@
             HorizontalOptions="End">
                 </ImageButton>
             </Grid>
-            <StackLayout Margin="0,0,0,10">
+        </StackLayout>
+        <!--<StackLayout Margin="0,0,0,10">
                 <Label Text="Normas que se deben de seguir para el uso del campo polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="20" FontAttributes="Bold" Margin="10,10,10,0"/>
-            </StackLayout>
-            <ScrollView>
-                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Green">
-                    <StackLayout BackgroundColor="#E7E3E7">
-                        <Label Text="1.- Los alumnos debe ir con ropa deportiva (retiro de cancha deportiva o  sancionado con una semana sin reservas)" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
-                        <Grid Margin="0,15,0,0">
-                            <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Grid>
-                        <Label Text="2.- Los alumnos no pueden usar zapatillas con punta de acero (retiro de cancha deportiva o  sancionado con una semana sin reservas)" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
-                        <Grid Margin="0,15,0,0">
-                            <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Grid>
-                        <Label Text="3.- Los alumnos no pueden quitarse prendas de vestir dentro del campo polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
-                        <Grid Margin="0,15,0,0">
-                            <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Grid>
-                        <Label Text="4.- Los alumnos no pueden hacer riñas o peleas dentro del polideporti  vo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
-                        <Grid Margin="0,15,0,0">
-                            <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Grid>
-                        <Label Text="5.- Para usar implementaria dentro del polideportivo como pelotas, raquetas, etc. se deben de entregar DNI para retirar dicha implementaria" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
-                        <Grid Margin="0,15,0,0">
-                            <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Grid>
-                        <Label Text="4.- Los alumnos no pueden hacer riñas o peleas dentro del polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
-                        <Grid Margin="0,15,0,0">
-                            <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Grid>
-                        <Label Text="4.- Los alumnos no pueden hacer riñas o peleas dentro del polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
-                        <Grid Margin="0,15,0,0">
-                            <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Grid>
-                        <Label Text="4.- Los alumnos no pueden hacer riñas o peleas dentro del polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontSize="17" FontAttributes="Bold" Padding="8"/>
-                        <Grid Margin="0,15,0,0">
-                            <BoxView Color="Black" HeightRequest="1" WidthRequest="300" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </Grid>
+            </StackLayout>-->
+        <StackLayout>
+            <ScrollView  HeightRequest="698" >                
+                    <StackLayout BackgroundColor="White">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Frame BorderColor="Gray" BackgroundColor="White"  WidthRequest="800" HeightRequest="100" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
+                            <StackLayout>
+                                <StackLayout  Orientation="Horizontal" >
+                                    <Label Text="Fútbol"  FontAttributes="Bold" FontSize="16"/>
+                                    <Label Text="N°1"  FontAttributes="Bold"  HorizontalOptions="EndAndExpand" VerticalOptions="Start" FontSize="16"/>
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1"  VerticalOptions="Center"/>
+                                </Grid>
+                                <StackLayout>
+                                    <Label Text="El alumno no puede quitarse el polo asdfasdfalsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfsdfasdf" />
+                                </StackLayout>
+                            </StackLayout>
+
+                        </Frame>
+
+                        <Frame BorderColor="Gray" BackgroundColor="White"  WidthRequest="800" HeightRequest="100" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
+                            <StackLayout>
+                                <StackLayout  Orientation="Horizontal"  >
+                                    <Label Text="Fútbol"  FontAttributes="Bold"  FontSize="16"/>
+                                    <Label Text="N°2"   FontAttributes="Bold"  HorizontalOptions="EndAndExpand" VerticalOptions="Start" FontSize="16"/>
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1"  VerticalOptions="Center"/>
+                                </Grid>
+                                <StackLayout>
+                                    <Label Text="El alumno no puede quitarse el polo asdfasdfalsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfsdfasdf" />
+                                </StackLayout>
+                            </StackLayout>
+
+                        </Frame>
+                        <Frame BorderColor="Gray" BackgroundColor="White"  WidthRequest="800" HeightRequest="100" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
+                            <StackLayout>
+                                <StackLayout  Orientation="Horizontal" >
+                                    <Label Text="Voley"  FontAttributes="Bold"  FontSize="16"/>
+                                    <Label Text="N°3"   FontAttributes="Bold"  HorizontalOptions="EndAndExpand" VerticalOptions="Start" FontSize="16"/>
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1"  VerticalOptions="Center"/>
+                                </Grid>
+                                <StackLayout>
+                                    <Label Text="El alumno no puede quitarse el polo asdfasdfalsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfsdfasdf" />
+                                </StackLayout>
+                            </StackLayout>
+
+                        </Frame>
+                        <Frame BorderColor="Gray" BackgroundColor="White"  WidthRequest="800" HeightRequest="100" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
+                            <StackLayout>
+                                <StackLayout  Orientation="Horizontal" >
+                                    <Label Text="Voley"  FontAttributes="Bold" FontSize="16"/>
+                                    <Label Text="N°4"   FontAttributes="Bold" HorizontalOptions="EndAndExpand" VerticalOptions="Start" FontSize="16"/>
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1"  VerticalOptions="Center"/>
+                                </Grid>
+                                <StackLayout>
+                                    <Label Text="El alumno no puede quitarse el polo asdfasdfalsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfsdfasdf" />
+                                </StackLayout>
+                            </StackLayout>
+
+                        </Frame>
+                        <Frame BorderColor="Gray" BackgroundColor="White"  WidthRequest="800" HeightRequest="100" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
+                            <StackLayout>
+                                <StackLayout  Orientation="Horizontal" >
+                                    <Label Text="Voley"  FontAttributes="Bold"  FontSize="16"/>
+                                    <Label Text="N°5"  FontAttributes="Bold"  HorizontalOptions="EndAndExpand" VerticalOptions="Start" FontSize="16"/>
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1"  VerticalOptions="Center"/>
+                                </Grid>
+                                <StackLayout>
+                                    <Label Text="El alumno no puede quitarse el polo asdfasdfalsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfsdfasdf" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BorderColor="Gray" BackgroundColor="White"  WidthRequest="800" HeightRequest="100" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
+                            <StackLayout>
+                                <StackLayout  Orientation="Horizontal" >
+                                    <Label Text="Voley"  FontAttributes="Bold"  FontSize="16"/>
+                                    <Label Text="N°5"  FontAttributes="Bold" HorizontalOptions="EndAndExpand" VerticalOptions="Start" FontSize="16"/>
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1"  VerticalOptions="Center"/>
+                                </Grid>
+                                <StackLayout>
+                                    <Label Text="El alumno no puede quitarse el polo asdfasdfalsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfsdfasdf" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BorderColor="Gray" BackgroundColor="White"  WidthRequest="800" HeightRequest="100" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
+                            <StackLayout>
+                                <StackLayout  Orientation="Horizontal" >
+                                    <Label Text="Voley"  FontAttributes="Bold"  FontSize="16"/>
+                                    <Label Text="N°5"   FontAttributes="Bold"  HorizontalOptions="EndAndExpand" VerticalOptions="Start" FontSize="16"/>
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1"  VerticalOptions="Center"/>
+                                </Grid>
+                                <StackLayout>
+                                    <Label Text="El alumno no puede quitarse el polo asdfasdfalsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfsdfasdf" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BorderColor="Gray" BackgroundColor="White"  WidthRequest="800" HeightRequest="100" CornerRadius="5" HasShadow="True" Margin="10,20,10,10">
+                            <StackLayout>
+                                <StackLayout  Orientation="Horizontal" >
+                                    <Label Text="Voley"  FontAttributes="Bold" FontSize="16"/>
+                                    <Label Text="N°5"   FontAttributes="Bold" HorizontalOptions="EndAndExpand" VerticalOptions="Start" FontSize="16"/>
+                                </StackLayout>
+
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1"  VerticalOptions="Center"/>
+                                </Grid>
+                                <StackLayout>
+                                    <Label Text="El alumno no puede quitarse el polo asdfasdfalsdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfsdfasdf" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
                     </StackLayout>
-                </StackLayout>
+                </StackLayout>               
             </ScrollView>
         </StackLayout>
-        
         
     </StackLayout>
 </ContentPage>

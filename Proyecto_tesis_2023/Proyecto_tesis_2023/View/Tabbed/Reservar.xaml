@@ -25,7 +25,9 @@
             HorizontalOptions="End">
                 </ImageButton>
             </Grid>
+
             <StackLayout VerticalOptions="Start">
+                <Image  Source="camp.png"  HeightRequest="300" WidthRequest="300"  Rotation="90" Margin="-50" />
                 <Label Text="Seleccione el campo" FontAttributes="Bold"
                    FontSize="17"
                    TextColor="Black"
@@ -51,7 +53,7 @@
                 <!--<Label Text="Aquí va el horario" FontSize="20" Margin="120,50,100,50" />-->
             </StackLayout>
             <StackLayout HorizontalOptions="CenterAndExpand">
-                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="450" WidthRequest="350"  Margin="0,0,0,20 " >
+                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500" WidthRequest="350"  Margin="0,0,0,20 " >
                     <StackLayout Spacing="12">
                         <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0" >
                             <StackLayout BackgroundColor="#EF4445" >

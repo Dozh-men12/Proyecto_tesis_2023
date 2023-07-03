@@ -203,5 +203,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\futbol1_inicio.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\camp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

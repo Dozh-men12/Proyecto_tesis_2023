@@ -39,7 +39,7 @@
                    TextColor="Black"
                    Margin="15,10,0,10"/>
             <StackLayout HorizontalOptions="CenterAndExpand">
-                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="420" WidthRequest="350"  Margin="0,0,0,20 " >
+                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="470" WidthRequest="350"  Margin="0,0,0,20 " >
                     <StackLayout Spacing="15">
                         <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
                             <StackLayout BackgroundColor="#DADADA">
