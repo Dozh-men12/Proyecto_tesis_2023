@@ -30,25 +30,23 @@
                 <Label Text="Normas que se deben de seguir para el uso del campo polideportivo" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="20" FontAttributes="Bold" Margin="10,10,10,0"/>
             </StackLayout>-->
         <StackLayout>
-            <ScrollView  HeightRequest="900" >
+            <ScrollView  HeightRequest="475" >
                 <StackLayout BackgroundColor="White">
                     <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                        <Frame x:Name="AccordionFrame" BorderColor="Gray" BackgroundColor="White" WidthRequest="800" HeightRequest="70" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
+                        <Frame x:Name="AccordionFrame" BorderColor="Green" BackgroundColor="White"  HeightRequest="30" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
                             <StackLayout>
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="Fútbol" FontAttributes="Bold" FontSize="16" HorizontalOptions="CenterAndExpand" />
-                                </StackLayout>
-
-                                <Grid HorizontalOptions="Center" VerticalOptions="Center">
-                                    <BoxView Color="Black" HeightRequest="1" VerticalOptions="Center" />
-                                </Grid>
-
-                                <StackLayout>
+                                <!--<Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <BoxView Color="Black" HeightRequest="1" VerticalOptions="Center" BackgroundColor="Green" />
+                                </Grid>-->
+                                <StackLayout Orientation="Horizontal"  >
+                                    <Label Text="Fútbol" FontAttributes="Bold" FontSize="16" />
+                                    <Image Source="soccer"  VerticalOptions="Start" HeightRequest="19" />
                                     <Grid>
                                         <Grid.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="ToggleAccordion" />
                                         </Grid.GestureRecognizers>
-                                        <Frame x:Name="AlumnoLabel" BorderColor="Gray" BackgroundColor="White" WidthRequest="300" HeightRequest="200" CornerRadius="5" HasShadow="True" Margin="0,10,30,-10" IsVisible="False">
+
+                                        <Frame x:Name="AlumnoLabel" BorderColor="Green" BackgroundColor="White" WidthRequest="300" HeightRequest="200" CornerRadius="5" HasShadow="True" Margin="0,10,30,-10" IsVisible="False">
                                             <StackLayout>
                                                 <StackLayout>
                                                     <Label Text="1.- El alumno no puede quitarse el polo dentro del campo" />
@@ -59,15 +57,18 @@
                                                 </StackLayout>
                                             </StackLayout>
                                         </Frame>
-                                        <Label x:Name="ArrowLabel" Text="▼" FontSize="24" HorizontalOptions="End" VerticalOptions="Center"/>
+                                        <Label x:Name="ArrowLabel" Text="▼" FontSize="24" HorizontalOptions="Start" VerticalOptions="Start" />
+                                        
                                     </Grid>
-                                </StackLayout>
+                                </StackLayout>                                                                         
+                                                             
                             </StackLayout>
                         </Frame>
                         <Frame x:Name="SecondFrame" BorderColor="Gray" BackgroundColor="White" WidthRequest="800" HeightRequest="70" CornerRadius="5" HasShadow="True" Margin="10,20,10,-10">
                             <StackLayout>
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="Baloncesto" FontAttributes="Bold" FontSize="16" HorizontalOptions="CenterAndExpand" />
+                                    <Image Source="soccer"  VerticalOptions="Start" HeightRequest="19" />
                                 </StackLayout>
 
                                 <Grid HorizontalOptions="Center" VerticalOptions="Center">

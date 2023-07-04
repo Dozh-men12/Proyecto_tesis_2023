@@ -26,7 +26,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
             if (isExpanded)
             {
                 AlumnoLabel.IsVisible = false;
-                ArrowLabel.Text = "▶";
+                ArrowLabel.Text = "▼";
 
                 // Animación de encogimiento del cuadro
                 var animation = new Animation(v => AccordionFrame.HeightRequest = v, 70, 70);
@@ -50,7 +50,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
             if (isSecondExpanded)
             {
                 AlumnoLabel2.IsVisible = false;
-                ArrowLabel2.Text = "▶";
+                ArrowLabel2.Text = "▼";
 
                 // Animación de encogimiento del segundo frame
                 var animation = new Animation(v => SecondFrame.HeightRequest = v, 70, 70);
@@ -74,7 +74,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
             if (isTercerExpanded)
             {
                 AlumnoLabel3.IsVisible = false;
-                ArrowLabel3.Text = "▶";
+                ArrowLabel3.Text = "▼";
                 var animation = new Animation(v => TercerFrame.HeightRequest = v, 70, 70);
                 animation.Commit(this, "ShrinkSecondAnimation", length: 200, finished: (v, c) => TercerFrame.HeightRequest = 70);
             }
@@ -94,7 +94,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
             if (isCuartoExpanded)
             {
                 AlumnoLabel4.IsVisible = false;
-                ArrowLabel4.Text = "▶";
+                ArrowLabel4.Text = "▼";
                 var animation = new Animation(v => CuartoFrame.HeightRequest = v, 70, 70);
                 animation.Commit(this, "ShrinkSecondAnimation", length: 200, finished: (v, c) => CuartoFrame.HeightRequest = 70);
             }
