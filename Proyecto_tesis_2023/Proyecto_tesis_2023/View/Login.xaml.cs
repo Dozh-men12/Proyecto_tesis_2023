@@ -41,7 +41,21 @@ namespace Proyecto_tesis_2023.View
                 GoogleUser = googleUser;
                 NameValue = GoogleUser.Name;
                 ImageValue = ImageSource.FromUri(new Uri(GoogleUser.Picture.ToString()));
-                await Navigation.PushAsync(new Mis_reservas(NameValue, ImageValue));
+
+                var containerTabbedPage = new ContainerTabbedPage();
+                var loginPage = containerTabbedPage.Children.FirstOrDefault(p => p is Mis_reservas) as Mis_reservas;
+
+                if (loginPage != null)
+                {
+                    loginPage.UpdateData(NameValue, ImageValue);
+                }
+                else
+                {
+                    loginPage = new Mis_reservas(NameValue, ImageValue);
+                    containerTabbedPage.Children.Add(loginPage);
+                }
+
+                await Navigation.PushAsync(containerTabbedPage);
             }
 
             else

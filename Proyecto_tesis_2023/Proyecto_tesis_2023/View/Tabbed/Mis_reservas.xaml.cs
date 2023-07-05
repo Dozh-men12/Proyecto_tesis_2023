@@ -42,5 +42,14 @@ namespace Proyecto_tesis_2023.View.Tabbed
 
         }
 
+        public void UpdateData(string NameValue, ImageSource ImageValue)
+        {
+            InitializeComponent();
+
+            lblName.Text = NameValue;
+            imgProfile.Source = ImageValue;
+
+        }
+
     }
 }
