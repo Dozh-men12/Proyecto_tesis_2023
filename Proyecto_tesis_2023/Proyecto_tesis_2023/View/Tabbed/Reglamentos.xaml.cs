@@ -29,7 +29,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
                 ArrowLabel.Text = "▼";
 
                 // Animación de encogimiento del cuadro
-                var animation = new Animation(v => AccordionFrame.HeightRequest = v, 70, 70);
+                var animation = new Animation(v => AccordionFrame.HeightRequest = v, 20, 70);
                 animation.Commit(this, "ShrinkAnimation", length: 200, finished: (v, c) => AccordionFrame.HeightRequest = 70);
             }
             else
@@ -38,7 +38,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
                 ArrowLabel.Text = "▼";
 
                 // Animación de agrandamiento del cuadro
-                var animation = new Animation(v => AccordionFrame.HeightRequest = v, 70, 300);
+                var animation = new Animation(v => AccordionFrame.HeightRequest = v, 20, 300);
                 animation.Commit(this, "ExpandAnimation", length: 200);
             }
 
