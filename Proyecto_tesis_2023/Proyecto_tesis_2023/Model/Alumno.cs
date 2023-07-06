@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Proyecto_tesis_2023.Model
 {
-    public class Alumnos
+    public class Alumno
     {   
         public int AlumnosId {get; set;}
         public int CodigoAlumno {get; set;}

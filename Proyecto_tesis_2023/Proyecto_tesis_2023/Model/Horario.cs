@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Proyecto_tesis_2023.Model
 {
-    public class Horarios
+    public class Horario
     { 
         public int HorariosId {get; set;}
         public TimeSpan HoraInicio {get; set;}

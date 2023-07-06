@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Proyecto_tesis_2023.Model
 {
-    public class MisReservas
+    public class MisReserva
     {
         public int IdMisReservas { get; set; }
         public int IdReservasDispo { get; set; }

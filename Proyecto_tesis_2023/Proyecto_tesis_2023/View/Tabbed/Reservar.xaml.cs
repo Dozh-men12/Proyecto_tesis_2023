@@ -1,4 +1,5 @@
 ﻿using Acr.UserDialogs;
+using Proyecto_tesis_2023.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
         public Reservar()
         {
             InitializeComponent();
+            this.BindingContext = new ViewModelReservar();
         }
 
         private async void Button_OnClicked(object sender, EventArgs e)

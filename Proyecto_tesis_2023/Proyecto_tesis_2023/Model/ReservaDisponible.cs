@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Proyecto_tesis_2023.Model
 {
-    public class ReservasDisponibles
+    public class ReservaDisponible
     {
         public int Id { get; set; }
         public int DiaId { get; set; }
@@ -13,8 +13,8 @@ namespace Proyecto_tesis_2023.Model
         public int HorarioId { get; set; }
 
         // Relaciones con otras entidades
-        public Dias Dia { get; set; }
-        public Campos Campo { get; set; }
-        public Horarios Horario { get; set; }
+        public Dia Dia { get; set; }
+        public Campo Campo { get; set; }
+        public Horario Horario { get; set; }
     }
 }
