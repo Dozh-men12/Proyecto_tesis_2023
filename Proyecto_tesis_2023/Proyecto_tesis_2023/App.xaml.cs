@@ -12,7 +12,7 @@
             {
                 InitializeComponent();
 
-                MainPage = new NavigationPage(new Login());
+                MainPage = new ContainerTabbedPage();
             }
 
             protected override void OnStart()

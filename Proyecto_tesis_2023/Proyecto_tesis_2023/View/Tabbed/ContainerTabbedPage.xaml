@@ -22,11 +22,11 @@
         
         
 
-        <!--<NavigationPage Title="Perfil" IconImageSource="user2_icon">
+        <NavigationPage Title="Perfil" IconImageSource="user2_icon">
             <x:Arguments>
                 <views:Mis_reservas/>
             </x:Arguments>
-        </NavigationPage>-->
+        </NavigationPage>
 
         <NavigationPage Title="Normas" IconImageSource="reglamentos_icon.png">
             <x:Arguments>

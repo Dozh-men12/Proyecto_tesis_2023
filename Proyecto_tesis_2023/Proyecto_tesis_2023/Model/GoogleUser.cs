@@ -6,9 +6,9 @@ namespace Proyecto_tesis_2023.Model
 {
     public class GoogleUser
     {
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public Uri Picture { get; set; }
+        public string Name {get; set;}
+        public string Email {get; set;}
+        public Uri Picture {get; set;}
     }
     public interface IGoogleManager
     {
