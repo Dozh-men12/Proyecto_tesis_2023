@@ -34,34 +34,46 @@ namespace Proyecto_tesis_2023.View
         {
             _googleManager.Login(OnLoginComplete);
         }
+
         private async void OnLoginComplete(GoogleUser googleUser, string message)
         {
             if (googleUser != null)
             {
-                GoogleUser = googleUser;
-                NameValue = GoogleUser.Name;
-                ImageValue = ImageSource.FromUri(new Uri(GoogleUser.Picture.ToString()));
-
-                var containerTabbedPage = new ContainerTabbedPage();
-                var loginPage = containerTabbedPage.Children.FirstOrDefault(p => p is Mis_reservas) as Mis_reservas;
-
-                if (loginPage != null)
+                if (IsValidEmail(googleUser.Email))
                 {
-                    loginPage.UpdateData(NameValue, ImageValue);
+                    GoogleUser = googleUser;
+                    NameValue = GoogleUser.Name;
+                    ImageValue = ImageSource.FromUri(new Uri(GoogleUser.Picture.ToString()));
+
+                    var containerTabbedPage = new ContainerTabbedPage();
+                    var loginPage = containerTabbedPage.Children.FirstOrDefault(p => p is Mis_reservas) as Mis_reservas;
+
+                    if (loginPage != null)
+                    {
+                        loginPage.UpdateData(NameValue, ImageValue);
+                    }
+                    else
+                    {
+                        loginPage = new Mis_reservas(NameValue, ImageValue);
+                        containerTabbedPage.Children.Add(loginPage);
+                    }
+
+                    await Navigation.PushAsync(containerTabbedPage);
                 }
                 else
                 {
-                    loginPage = new Mis_reservas(NameValue, ImageValue);
-                    containerTabbedPage.Children.Add(loginPage);
+                    DisplayAlert("Message", "Solo se permiten correos de dominio @tecsup.edu.pe", "Ok");
                 }
-
-                await Navigation.PushAsync(containerTabbedPage);
             }
-
             else
             {
                 DisplayAlert("Message", message, "Ok");
             }
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            return email.EndsWith("@tecsup.edu.pe", StringComparison.OrdinalIgnoreCase);
         }
 
         private void GoogleLogout()
@@ -69,6 +81,7 @@ namespace Proyecto_tesis_2023.View
             _googleManager.Logout();
             IsLogedIn = false;
         }
+
         private void btnLogout_Clicked(object sender, EventArgs e)
         {
             _googleManager.Logout();
@@ -77,6 +90,5 @@ namespace Proyecto_tesis_2023.View
             txtEmail.Text = "Email: ";
             imgProfile.Source = "";
         }
-
     }
 }

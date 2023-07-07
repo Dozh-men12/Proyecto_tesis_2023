@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Perfil" IconImageSource="user2_icon"
              x:Class="Proyecto_tesis_2023.View.Login">
-    
+
     <RelativeLayout VerticalOptions="Center" HorizontalOptions="Center">
 
         <Grid VerticalOptions="FillAndExpand" BackgroundColor="#2887DE">
