@@ -15,6 +15,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
         public Mis_reservas()
         {
             InitializeComponent();
+            lblName.Text = Constante.Nombre;
         }
 
         private async void Button_alert(object sender, EventArgs e)

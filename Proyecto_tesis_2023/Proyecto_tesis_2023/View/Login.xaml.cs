@@ -32,7 +32,8 @@ namespace Proyecto_tesis_2023.View
 
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
-            _googleManager.Login(OnLoginComplete);
+           _googleManager.Logout();
+           _googleManager.Login(OnLoginComplete);
         }
 
         private async void OnLoginComplete(GoogleUser googleUser, string message)
@@ -44,6 +45,8 @@ namespace Proyecto_tesis_2023.View
                     GoogleUser = googleUser;
                     NameValue = GoogleUser.Name;
                     ImageValue = ImageSource.FromUri(new Uri(GoogleUser.Picture.ToString()));
+
+                    Constante.Nombre = GoogleUser.Name;
 
                     var containerTabbedPage = new ContainerTabbedPage();
                     var loginPage = containerTabbedPage.Children.FirstOrDefault(p => p is Mis_reservas) as Mis_reservas;
