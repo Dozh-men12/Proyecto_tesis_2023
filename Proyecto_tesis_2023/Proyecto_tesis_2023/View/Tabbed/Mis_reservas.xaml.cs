@@ -16,7 +16,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
         {
             InitializeComponent();
             lblName.Text = Constante.Nombre;
-            imgProfile.Source = Constante.Imagen;
+            imgProfile.Source = Constante1.Imagen;
         }
 
         private async void Button_alert(object sender, EventArgs e)
