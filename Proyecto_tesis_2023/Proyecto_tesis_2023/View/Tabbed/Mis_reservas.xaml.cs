@@ -16,6 +16,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
         {
             InitializeComponent();
             lblName.Text = Constante.Nombre;
+            imgProfile.Source = Constante.Imagen;
         }
 
         private async void Button_alert(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
             InitializeComponent();
 
             lblName.Text = NameValue;
-            imgProfile.Source = ImageValue;
+            imgProfile.Source= ImageValue;
 
         }
 
