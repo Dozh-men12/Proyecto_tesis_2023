@@ -1,8 +1,11 @@
 ﻿using Acr.UserDialogs;
+using Proyecto_tesis_2023.Model;
 using Proyecto_tesis_2023.ViewModel;
 using System;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,9 +20,53 @@ namespace Proyecto_tesis_2023.View.Tabbed
 
         public Reservar()
         {
+
             InitializeComponent();
+
+              
             this.BindingContext = new ViewModelReservar();
         }
+        //-------------------------- A P I ----------------------------------------------
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+        // Llama a la función RefreshDataAsync para obtener los datos al iniciar la vista
+        var data = await RefreshDataAsync();
+        lvreservasdispo.ItemsSource = data.ToList();
+
+            // Realiza cualquier lógica adicional con los datos obtenidos
+            // Por ejemplo, puedes asignarlos a una propiedad del ViewModel o actualizar la interfaz de usuario
+            // ...
+        }
+
+    public async Task<List<ReservaDisponible>> RefreshDataAsync()
+        {
+            Console.WriteLine("entro ala funcion");
+            HttpClient client = new HttpClient();
+            List<ReservaDisponible> reservadisponible = new List<ReservaDisponible>();
+
+            Uri uri = new Uri("http://192.168.18.32:3000/reservas");
+
+
+            HttpResponseMessage response = await client.GetAsync(uri);
+            Console.WriteLine(response);
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+
+                reservadisponible = JsonConvert.DeserializeObject<List<ReservaDisponible>>(content);
+                Console.WriteLine(reservadisponible);
+
+            }
+            return reservadisponible;
+
+        }
+
+       
+
+
+
 
         private async void Button_OnClicked(object sender, EventArgs e)
         {

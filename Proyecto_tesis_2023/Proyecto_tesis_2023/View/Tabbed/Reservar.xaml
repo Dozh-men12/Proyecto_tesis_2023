@@ -52,29 +52,50 @@
                 <DatePicker  x:Name="Calendario" MinimumDate="07/01/2023"  TextColor="#2887DE" Margin="20,-10,20,15" FontSize="19" MaximumDate="12/15/2023" Date="06/24/2023" />
                 <!--<Label Text="Aquí va el horario" FontSize="20" Margin="120,50,100,50" />-->
             </StackLayout>
-            <StackLayout HorizontalOptions="CenterAndExpand">
-                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500" WidthRequest="350"  Margin="0,0,0,20 " >
-                    <StackLayout Spacing="12">
-                        <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0" >
-                            <StackLayout BackgroundColor="#EF4445" >
-                                <Image Source="hour" Aspect="AspectFit" Margin="-260,10,0,0" WidthRequest="20" />
-                                <Label Text="13 PM - 14 PM" Margin="45,-27,0,0"/>
-                                <Image Source="soccer" Margin="-260,10,0,0" WidthRequest="20"/>
-                                <Label Text="FUTBOL"  Margin="45,-27,0,0"/>
-                                <Image Source="campofut1" Margin="-260,10,0,0" WidthRequest="20"/>
-                                <Label Text="CAMPO FUTBOL 1"  Margin="45,-27,0,0"/>
-                                <Button Text="Reservar" Margin="200,10,5,5" BackgroundColor="Gray" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
+            <ListView x:Name="lvreservasdispo">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <StackLayout HeightRequest="200" Spacing="20">
+                                <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0" HeightRequest="165">
+                                    <StackLayout BackgroundColor="#EF4444" HeightRequest="100">
+                                        <StackLayout Orientation="Horizontal" Margin="20" >
+                                            <Image Source="hour" Aspect="AspectFit"  WidthRequest="20" />
+                                            <Label Text="{Binding inicio}" />
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" Margin="20,0,20,20">
+                                            <Image Source="campofut1"  WidthRequest="20"/>
+                                            <Label Text="{Binding campo}" />
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                            <Button Text="Reservar" Margin="0,0,10,0" BackgroundColor="Gray" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                </Frame>
                             </StackLayout>
-                        </Frame>
-                        <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
-                            <StackLayout BackgroundColor="#EF4444">
-                                <Image Source="hour" Aspect="AspectFit" Margin="-260,10,0,0" WidthRequest="20" />
-                                <Label Text="13 PM - 14 PM" Margin="45,-27,0,0"/>
-                                <Image Source="soccer" Margin="-260,10,0,0" WidthRequest="20"/>
-                                <Label Text="FUTBOL"  Margin="45,-27,0,0"/>
-                                <Image Source="campofut1" Margin="-260,10,0,0" WidthRequest="20"/>
-                                <Label Text="CAMPO FUTBOL 1"  Margin="45,-27,0,0"/>
-                                <Button Text="Reservar" Margin="200,10,5,5" BackgroundColor="Gray" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500"  WidthRequest="350"  Margin="0,0,0,20 " >
+                    <StackLayout Spacing="12">
+        
+                        <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0" HeightRequest="165">
+                            <StackLayout BackgroundColor="#EF4444" >
+                                <StackLayout Orientation="Horizontal" Margin="20" >
+                                    <Image Source="hour" Aspect="AspectFit"  WidthRequest="20" />
+                                    <Label Text="13 PM - 14 PM"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Margin="20,0,20,20">
+                                    <Image Source="campofut1"  WidthRequest="20"/>
+                                    <Label Text="CAMPO FUTBOL 1" />                                    
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                    <Button Text="Reservar" Margin="0,0,10,0" BackgroundColor="Gray" TextColor="Black" CornerRadius="10" Clicked="Button_OnClicked"/>
+                                </StackLayout>                                
                             </StackLayout>
                         </Frame>
                         <Frame BorderColor="Black" Padding="2" Margin="20,0,20,0">
