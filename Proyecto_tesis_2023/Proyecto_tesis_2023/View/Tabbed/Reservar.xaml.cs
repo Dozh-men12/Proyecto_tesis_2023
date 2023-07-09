@@ -33,14 +33,38 @@ namespace Proyecto_tesis_2023.View.Tabbed
 
         // Llama a la función RefreshDataAsync para obtener los datos al iniciar la vista
         var data = await RefreshDataAsync();
-        lvreservasdispo.ItemsSource = data.ToList();
 
+         lvreservasdispo.ItemsSource = data.ToList();
+
+            var campos = await LoadCampos();
+            lvcampos.ItemsSource = campos.ToList();
+
+            var dias = await LoadDias();
+            lvdias.ItemsSource = dias.ToList();
             // Realiza cualquier lógica adicional con los datos obtenidos
             // Por ejemplo, puedes asignarlos a una propiedad del ViewModel o actualizar la interfaz de usuario
             // ...
         }
 
-    public async Task<List<ReservaDisponible>> RefreshDataAsync()
+        //---------------------DATA PICKER ---------------------
+        public async Task<List<Campo>> LoadCampos()
+        {
+            HttpClient client = new HttpClient();
+            var response = await client.GetStringAsync("http://192.168.18.32:3000/campos");
+            var campos = JsonConvert.DeserializeObject<List<Campo>>(response);
+
+            return campos;
+        }
+
+        public async Task<List<Dia>> LoadDias()
+        {
+            HttpClient client = new HttpClient();
+            var response = await client.GetStringAsync("http://192.168.18.32:3000/dias");
+            var dias = JsonConvert.DeserializeObject<List<Dia>>(response);
+
+            return dias;
+        }
+        public async Task<List<ReservaDisponible>> RefreshDataAsync()
         {
             Console.WriteLine("entro ala funcion");
             HttpClient client = new HttpClient();
@@ -48,7 +72,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
 
             Uri uri = new Uri("http://192.168.18.32:3000/reservas");
 
-
+  
             HttpResponseMessage response = await client.GetAsync(uri);
             Console.WriteLine(response);
             if (response.IsSuccessStatusCode)
@@ -63,7 +87,6 @@ namespace Proyecto_tesis_2023.View.Tabbed
 
         }
 
-       
 
 
 

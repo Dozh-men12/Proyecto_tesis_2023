@@ -6,8 +6,8 @@ namespace Proyecto_tesis_2023.Model
 {
     public class Dia
     {
-        public int DiaId {get; set;}
-        public String Nombre {get; set;}
+        public string id_dias {get; set;}
+        public string nombre {get; set;}
 
 
     }

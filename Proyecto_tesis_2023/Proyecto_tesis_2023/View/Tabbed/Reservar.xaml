@@ -32,16 +32,10 @@
                    FontSize="17"
                    TextColor="Black"
                    Margin="10,10,0,10"/>
-                <Picker  Title="Elige un campo" Margin="20,-10,20,0">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Futbol campo1</x:String>
-                            <x:String>Futbol campo 2</x:String>
-                            <x:String>Basquet y/o Voley</x:String>
-                            <x:String>Frontón</x:String>
-                            <x:String>Ping Pong</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
+                <Picker  x:Name="lvcampos" Title="Elige un campo" Margin="20,-10,20,0">
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="nombre" />
+                    </Picker.ItemDisplayBinding>
                 </Picker>
             </StackLayout>
             <StackLayout VerticalOptions="Center"  HorizontalOptions="FillAndExpand">
@@ -49,9 +43,17 @@
                    FontSize="17"
                    Margin="10,10,0,10"
                    TextColor="Black" />
-                <DatePicker  x:Name="Calendario" MinimumDate="07/01/2023"  TextColor="#2887DE" Margin="20,-10,20,15" FontSize="19" MaximumDate="12/15/2023" Date="06/24/2023" />
-                <!--<Label Text="Aquí va el horario" FontSize="20" Margin="120,50,100,50" />-->
+                <Picker  x:Name="lvdias" Title="Elige un día" Margin="20,-10,20,0">
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="nombre"/>
+                    </Picker.ItemDisplayBinding>
+                </Picker>
             </StackLayout>
+            <!--Boton para filtrar-->
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Padding="10">
+                <Button Text="Buscar" x:Name="BtnSearch" ></Button> 
+            </StackLayout>
+
             <ListView x:Name="lvreservasdispo">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -62,6 +64,7 @@
                                         <StackLayout Orientation="Horizontal" Margin="20" >
                                             <Image Source="hour" Aspect="AspectFit"  WidthRequest="20" />
                                             <Label Text="{Binding inicio}" />
+                                            <Label Text="{Binding fin}" />
                                         </StackLayout>
                                         <StackLayout Orientation="Horizontal" Margin="20,0,20,20">
                                             <Image Source="campofut1"  WidthRequest="20"/>
@@ -79,7 +82,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <StackLayout HorizontalOptions="CenterAndExpand">
+            <!--<StackLayout HorizontalOptions="CenterAndExpand">
                 <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500"  WidthRequest="350"  Margin="0,0,0,20 " >
                     <StackLayout Spacing="12">
         
@@ -144,7 +147,7 @@
                         </Frame>
                     </StackLayout>
                 </ScrollView>
-            </StackLayout>
+            </StackLayout>-->
         </StackLayout>
     </ScrollView>
 
