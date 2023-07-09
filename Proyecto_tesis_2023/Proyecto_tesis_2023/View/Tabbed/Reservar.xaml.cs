@@ -50,16 +50,19 @@ namespace Proyecto_tesis_2023.View.Tabbed
         public async Task<List<Campo>> LoadCampos()
         {
             HttpClient client = new HttpClient();
-            var response = await client.GetStringAsync("http://192.168.18.32:3000/campos");
+            var response = await client.GetStringAsync("http://192.168.1.4:3000/campos");
             var campos = JsonConvert.DeserializeObject<List<Campo>>(response);
 
             return campos;
         }
 
+        //ip  Oscar http://192.168.18.32:3000/campos
+        //ip Carlos http://192.168.1.4:3000/campos
+
         public async Task<List<Dia>> LoadDias()
         {
             HttpClient client = new HttpClient();
-            var response = await client.GetStringAsync("http://192.168.18.32:3000/dias");
+            var response = await client.GetStringAsync("http://192.168.1.4:3000/dias");
             var dias = JsonConvert.DeserializeObject<List<Dia>>(response);
 
             return dias;
@@ -70,7 +73,7 @@ namespace Proyecto_tesis_2023.View.Tabbed
             HttpClient client = new HttpClient();
             List<ReservaDisponible> reservadisponible = new List<ReservaDisponible>();
 
-            Uri uri = new Uri("http://192.168.18.32:3000/reservas");
+            Uri uri = new Uri("http://192.168.1.4:3000/reservas");
 
   
             HttpResponseMessage response = await client.GetAsync(uri);

@@ -47,6 +47,7 @@ namespace Proyecto_tesis_2023.View
                     ImageValue = ImageSource.FromUri(new Uri(GoogleUser.Picture.ToString()));
 
                     Constante.Nombre = GoogleUser.Name;
+                    Constante.Imagen = ImageSource.FromUri(new Uri(GoogleUser.Picture.ToString()));
 
                     var containerTabbedPage = new ContainerTabbedPage();
 
