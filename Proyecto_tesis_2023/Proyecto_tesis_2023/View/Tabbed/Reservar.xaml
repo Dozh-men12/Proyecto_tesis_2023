@@ -32,7 +32,7 @@
                    FontSize="17"
                    TextColor="Black"
                    Margin="10,10,0,10"/>
-                <Picker  x:Name="lvcampos" Title="Elige un campo" Margin="20,-10,20,0">
+                <Picker  x:Name="lvcampos" Title="Elige un campo" Margin="20,-10,20,0" SelectedIndexChanged="lvcampos_SelectedIndexChanged">
                     <Picker.ItemDisplayBinding>
                         <Binding Path="nombre" />
                     </Picker.ItemDisplayBinding>
@@ -43,7 +43,7 @@
                    FontSize="17"
                    Margin="10,10,0,10"
                    TextColor="Black" />
-                <Picker  x:Name="lvdias" Title="Elige un día" Margin="20,-10,20,0">
+                <Picker  x:Name="lvdias" Title="Elige un día" Margin="20,-10,20,0" SelectedIndexChanged="lvdias_SelectedIndexChanged">
                     <Picker.ItemDisplayBinding>
                         <Binding Path="nombre"/>
                     </Picker.ItemDisplayBinding>
@@ -51,10 +51,24 @@
             </StackLayout>
             <!--Boton para filtrar-->
             <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Padding="10">
-                <Button Text="Buscar" x:Name="BtnSearch" ></Button> 
+                <Button Text="Buscar" Clicked="Button_LoadFilter"
+                   
+                x:Name="BtnSearch" />
             </StackLayout>
 
-            <ListView x:Name="lvreservasdispo">
+            <!--<ScrollView Orientation="Vertical">
+                <Frame></Frame>
+            </ScrollView>-->
+
+            <StackLayout >
+                <StackLayout Padding="3" x:Name="stackReservasDispo">
+                    <StackLayout x:Name="stackReservaDetalles">
+                        
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+            <!--<ListView x:Name="lvreservasdispo">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >
@@ -80,7 +94,7 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>
+            </ListView>-->
 
             <!--<StackLayout HorizontalOptions="CenterAndExpand">
                 <ScrollView HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="500"  WidthRequest="350"  Margin="0,0,0,20 " >

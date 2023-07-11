@@ -11,8 +11,9 @@
             public App()
             {
                 InitializeComponent();
+            MainPage = new ContainerTabbedPage();
 
-            MainPage = new NavigationPage(new Login());
+            //MainPage = new NavigationPage(new Login());
             }
 
             protected override void OnStart()
